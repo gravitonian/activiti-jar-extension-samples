@@ -100,12 +100,17 @@ public class CustomDataModelServiceImpl implements AlfrescoCustomDataModelServic
         }
     }
 
+    /**
+     * CREATE USER employees@localhost IDENTIFIED BY '1234';
+     * GRANT ALL PRIVILEGES ON employees.* TO employees@localhost IDENTIFIED BY '1234';
+     * FLUSH PRIVILEGES;
+     */
     public CustomDataModelServiceImpl() {
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
         ds.setUrl("jdbc:mysql://localhost:3306/employees");
-        ds.setUsername("root");
-        ds.setPassword("f5o6u924");
+        ds.setUsername("employees");
+        ds.setPassword("1234");
 
         jdbcTemplate = new SimpleJdbcTemplate(ds);
     }
