@@ -55,7 +55,7 @@
    <build>
        <resources>
            <!-- Filter the resource files in this project and 
-do property substitutions -->
+                do property substitutions -->
            <resource>
                <directory>src/main/resources</directory>
                <filtering>true</filtering>
@@ -63,7 +63,7 @@ do property substitutions -->
        </resources>
        <testResources>
            <!-- Filter the test resource files in this project and 
-do property substitutions -->
+                do property substitutions -->
            <testResource>
                <directory>src/test/resources</directory>
                <filtering>true</filtering>
@@ -76,11 +76,12 @@ do property substitutions -->
        -->
    <repositories>
        <!-- Activiti Enterprise Edition Artifacts, 
-put username/pwd for server in settings.xml -->
+            put username/pwd for server in settings.xml -->
        <repository>
-           <id>activiti-private-repository</id>
-<url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-releases</url>
+            <id>activiti-private-repository</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-releases</url>
        </repository>
    </repositories>
 </project>
+
 

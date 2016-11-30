@@ -19,8 +19,15 @@
 package com.activiti.extension.bean;
 
 import com.activiti.api.engine.ProcessEngineConfigurationConfigurer;
+import org.activiti.engine.impl.event.EventHandler;
+import org.activiti.engine.impl.jobexecutor.JobHandler;
 import org.activiti.spring.SpringProcessEngineConfiguration;
 import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  *
@@ -32,6 +39,19 @@ public class CustomProcessEngineConfiguration implements ProcessEngineConfigurat
     @Override
     public void processEngineConfigurationInitialized(SpringProcessEngineConfiguration configuration) {
         // Customize something...
+
+        List<JobHandler> customJobHandlers = new ArrayList<>();
+        configuration.setCustomJobHandlers(customJobHandlers);
+
+        List<EventHandler> customEventHandlers = new ArrayList<>();
+        configuration.setCustomEventHandlers(customEventHandlers);
+
+        Set<String> customMybatisXMLMappers = new HashSet<>();
+        configuration.setCustomMybatisXMLMappers(customMybatisXMLMappers);
+
+
+
+
     }
 }
 
