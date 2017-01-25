@@ -46,7 +46,7 @@ import java.util.Map;
  *
  * @author martin.bergljung@alfresco.com
  */
-@Service
+@Service("activiti_alfrescoCustomDataModelService")
 public class CustomDataModelServiceImpl implements AlfrescoCustomDataModelService {
     private static Logger logger = LoggerFactory.getLogger(CustomDataModelServiceImpl.class);
 
