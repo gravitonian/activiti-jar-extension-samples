@@ -129,7 +129,7 @@ public class CustomDataModelServiceImpl implements AlfrescoCustomDataModelServic
                                      String fieldName, Object fieldValue) {
 
         logger.info("getMappedValue() EntityDefinition [Name=" + entityDefinition.getName() +
-                "][TableName=" + entityDefinition.getTableName() + "][Id=" + entityDefinition.getId() +
+                "][TableName=" + SALARIES_TABLE_NAME + "][Id=" + entityDefinition.getId() +
                 "][Attributes=" + entityDefinition.getAttributes().size() +
                 "] [fieldName=" + fieldName +
                 "] [variableValue=" + fieldValue + "]");
@@ -167,7 +167,7 @@ public class CustomDataModelServiceImpl implements AlfrescoCustomDataModelServic
                                                    DataModelEntityRepresentation entityValue) {
 
         logger.info("getVariableEntity() Entity [Name=" + entityValue.getName() +
-                "][TableName=" + entityValue.getTableName() + "][Id=" + entityValue.getId() +
+                "][TableName=" + SALARIES_TABLE_NAME + "][Id=" + entityValue.getId() +
                 "][Attributes=" + entityValue.getAttributes().size() +
                 "] [keyValue=" + keyValue +
                 "] [variableName=" + variableName + "]");
@@ -191,7 +191,7 @@ public class CustomDataModelServiceImpl implements AlfrescoCustomDataModelServic
                               DataModelDefinitionRepresentation dataModel) {
 
         logger.info("storeEntity() EntityDefinition [Name=" + entityDefinition.getName() +
-                "][TableName=" + entityDefinition.getTableName() + "][Id=" + entityDefinition.getId() +
+                "][TableName=" + SALARIES_TABLE_NAME + "][Id=" + entityDefinition.getId() +
                 "][Attributes=" + entityDefinition.getAttributes().size() +
                 "] [dataModel=" + dataModel.getName() +
                 "] [attributeDefinitionsAndValues=" + attributeDefinitionsAndValues.size() + "]");
